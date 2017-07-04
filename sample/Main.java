@@ -30,7 +30,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 
     private Stage stage;
     private Menu mFile;
-    private MenuItem iNew, iImport, iExport;
+    private MenuItem iImport, iExport;
     private Canvas importCanvas, resultsCanvas;
     private CheckBox[] checkBoxes;
 
@@ -43,10 +43,9 @@ public class Main extends Application implements EventHandler<ActionEvent> {
         BorderPane mainLayout = new BorderPane();
 
         mFile = new Menu("File");
-        iNew = new MenuItem("New");
         iImport = new MenuItem("Import");
         iExport = new MenuItem("Export");
-        mFile.getItems().addAll(iNew, iImport, iExport);
+        mFile.getItems().addAll(iImport, iExport);
         MenuBar menuBar = new MenuBar(mFile);
 
         iImport.setOnAction(event -> importImageFromFile());
