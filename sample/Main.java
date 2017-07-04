@@ -69,6 +69,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
         mainLayout.setCenter(gridPane);
 
 
+        stage.setTitle("Android Icon Exporter");
         stage.setResizable(false);
         stage.setScene(new Scene(mainLayout, 720, 720));
         stage.show();
